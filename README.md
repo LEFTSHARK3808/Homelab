@@ -11,7 +11,7 @@ A single-node Proxmox homelab I use to learn infrastructure, networking and — 
 | | |
 |---|---|
 | **Hypervisor** | Proxmox VE on Debian (`hostserver`) |
-| **RAM** | 15 GB — the binding constraint; workloads are scheduled around it |
+| **RAM** | 16 GB — upgrading to 32 soon|
 | **Storage** | ~338 GB thin LVM (VMs, snapshots) · ~1.8 TB thick LVM (bulk) · ~94 GB dir (ISOs, backups) |
 | **Network** | `192.168.4.0/22`, remote access via Tailscale subnet router |
 | **SIEM** | Splunk Enterprise 10.4 (active) · Wazuh 4.7 (archived) |
@@ -57,12 +57,12 @@ flowchart LR
 |---|---|---|---|---|
 | 101 | ollama | LXC | Local LLM inference | 🟢 Running |
 | 102 | docker | LXC | CouchDB (Obsidian sync), ntfy | 🟢 Running |
-| 104 | wazuh | VM | Wazuh SIEM — superseded by Splunk | ⚪ Stopped |
+| 104 | wazuh | VM | Wazuh SIEM — superseded by Splunk | ⚪ switched to splunk|
 | 105 | splunk | VM | Splunk Enterprise 10.4.3 | 🟢 Running |
 | 106 | valheim | LXC | Valheim dedicated server | 🟢 Running |
 | 107 | atomic-lab | VM | Atomic Red Team target, auditd + Universal Forwarder | 🟢 Running |
-| 100 | crafty-controller | LXC | Minecraft controller | ⚪ Stopped |
-| 103 | palworld | LXC/VM | Palworld dedicated server | ⚪ Stopped (needs 16 GB) |
+| 100 | crafty-controller | LXC | Minecraft controller |
+| 103 | palworld | LXC/VM | Palworld dedicated server|
 
 ## Repository layout
 
