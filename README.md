@@ -57,7 +57,7 @@ flowchart LR
 |---|---|---|---|---|
 | 101 | ollama | LXC | Local LLM inference | 🟢 Running |
 | 102 | docker | LXC | CouchDB (Obsidian sync), ntfy | 🟢 Running |
-| 104 | wazuh | VM | Wazuh SIEM — superseded by Splunk | ⚪ switched to splunk|
+| 104 | wazuh | VM | Wazuh SIEM — superseded by Splunk |
 | 105 | splunk | VM | Splunk Enterprise 10.4.3 | 🟢 Running |
 | 106 | valheim | LXC | Valheim dedicated server | 🟢 Running |
 | 107 | atomic-lab | VM | Atomic Red Team target, auditd + Universal Forwarder | 🟢 Running |
