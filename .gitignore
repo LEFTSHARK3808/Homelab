@@ -1,0 +1,14 @@
+# Never commit secrets
+*.env
+.env*
+*passwords*
+*secret*
+*.pem
+*.key
+wazuh-install-files.tar
+PalWorldSettings.ini
+
+# OS / editor noise
+.DS_Store
+*.swp
+.vscode/
