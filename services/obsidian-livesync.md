@@ -13,7 +13,7 @@ Obsidian vaults sync across devices through the **Self-hosted LiveSync** plugin,
 
 ## Notes
 
-- CORS is enabled on CouchDB so the Obsidian client can talk to it directly.
+- Cross Origin Resource Sharing(CORS) is enabled on CouchDB so the Obsidian client can talk to it directly.
 - The LXC was converted from unprivileged to privileged to fix rlimit errors in containers.
 - Remote sync only works while the client has Tailscale routes accepted (`tailscale up --accept-routes`).
 - **This LXC is off-limits for attack tooling** — it holds the only copy of the synced data outside the clients.
