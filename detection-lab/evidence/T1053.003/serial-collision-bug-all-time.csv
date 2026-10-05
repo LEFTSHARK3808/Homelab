@@ -1,0 +1,14 @@
+"first_seen",host,action,exe,files,auid,uid
+"09/22/2026 22:20:33.786","atomic-lab",create,"/usr/bin/crontab","crontabs/tmp.YkBYhq",1000,0
+"09/22/2026 22:20:33.787","atomic-lab",replace,"/usr/bin/crontab","crontabs/root
+crontabs/tmp.YkBYhq",1000,0
+"09/22/2026 22:20:33.792","atomic-lab",create,"/usr/bin/dash","/etc/cron.d/persistevil",1000,0
+"09/22/2026 23:17:28.691","atomic-lab",delete,"/usr/bin/rm","/etc/cron.hourly/persistevil",1000,0
+"09/22/2026 23:17:28.730","atomic-lab",delete,"/usr/bin/rm","/etc/cron.monthly/persistevil",1000,0
+"09/22/2026 23:17:28.731","atomic-lab",delete,"/usr/bin/rm","/etc/cron.weekly/persistevil",1000,0
+"09/22/2026 23:17:28.801","atomic-lab",create,"/usr/bin/bash","/etc/cron.daily/persistevil",1000,0
+"09/22/2026 23:17:28.801","atomic-lab",create,"/usr/bin/bash","/etc/cron.hourly/persistevil",1000,0
+"09/22/2026 23:17:28.835","atomic-lab",create,"/usr/bin/bash","/etc/cron.monthly/persistevil",1000,0
+"09/22/2026 23:17:28.836","atomic-lab",create,"/usr/bin/bash","/etc/cron.weekly/persistevil",1000,0
+"10/05/2026 20:02:38.793","atomic-lab",create,"/usr/bin/bash","/var/spool/cron/crontabs/persistevil",1000,0
+"10/05/2026 20:18:22.358","atomic-lab",delete,"/usr/bin/rm","/etc/cron.daily/persistevil",1000,0

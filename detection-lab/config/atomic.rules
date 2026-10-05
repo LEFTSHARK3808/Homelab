@@ -1,13 +1,11 @@
-## /etc/audit/rules.d/atomic.rules
-## Telemetry for the detection lab. Keys (-k) are what the SPL pivots on — keep them stable.
+## /etc/audit/rules.d/atomic.rules: telemetry the detections depend on
+## Load with: sudo augenrules --load && sudo auditctl -l
 
 ## Process execution
 -a exit,always -F arch=b64 -S execve -k exec
 -a exit,always -F arch=b32 -S execve -k exec
 
 ## Identity / credential files
-## /etc/shadow gets a READ watch: legitimate reads are rare, so it's high-signal (T1003.008).
-## /etc/passwd does not: it's read by every login, ls -l and id.
 -w /etc/passwd -p wa -k identity
 -w /etc/shadow -p rwa -k identity
 -w /etc/group  -p wa -k identity
@@ -18,6 +16,11 @@
 -w /etc/crontab -p wa -k persistence
 -w /etc/cron.d -p wa -k persistence
 -w /var/spool/cron -p wa -k persistence
+## Periodic cron folders: gap found by ART T1053.003-2 (2026-10-05)
+-w /etc/cron.hourly -p wa -k persistence
+-w /etc/cron.daily -p wa -k persistence
+-w /etc/cron.weekly -p wa -k persistence
+-w /etc/cron.monthly -p wa -k persistence
 -w /etc/systemd/system -p wa -k persistence
 -w /root/.ssh -p wa -k ssh_keys
 
