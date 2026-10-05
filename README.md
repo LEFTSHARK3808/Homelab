@@ -13,7 +13,7 @@ A single-node Proxmox homelab I use to learn infrastructure, networking and — 
 | **Hypervisor** | Proxmox VE on Debian (`hostserver`) |
 | **RAM** | 16 GB — upgrading to 32 soon|
 | **Storage** | ~338 GB thin LVM (VMs, snapshots) · ~1.8 TB thick LVM (bulk) · ~94 GB dir (ISOs, backups) |
-| **Network** | `192.168.4.0/22`, remote access via Tailscale subnet router |
+| **Network** | remote access via Tailscale subnet router |
 | **SIEM** | Splunk Enterprise 10.4 (active) · Wazuh 4.7 (archived) |
 
 ## Architecture
