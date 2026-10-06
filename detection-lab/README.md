@@ -1,6 +1,6 @@
 # Detection Engineering Lab
 
-A purple-team loop: run a MITRE ATT&CK technique with Atomic Red Team, see whether
+Run a MITRE ATT&CK technique using Atomic Red Team, see whether
 Splunk catches it, and write or tune a detection for the gap.
 
 ## Architecture
@@ -51,7 +51,7 @@ detection written → tuning applied.
 
 | Technique | Name | Telemetry | Status |
 |-----------|------|-----------|--------|
-| T1087.001 | Local Account Discovery | `EXECVE` args | ✅ [Detection written & validated](detections/T1087.001.md) |
+| T1087.001 | Local Account Discovery | `EXECVE` args | ✅ Created audit rules and validated it via splunk (detections/T1087.001.md) |
 | T1053.003 | Cron | `persistence` key writes (`SYSCALL` + `PATH`) | ✅ [Detection written & validated](detections/T1053.003.md): **telemetry gap found and closed** |
 | T1003.008 | /etc/passwd & /etc/shadow | `identity` key read of `/etc/shadow` | 🔜 Next |
 | T1136.001 | Create Account | `useradd` execve + `identity` writes | Planned |
