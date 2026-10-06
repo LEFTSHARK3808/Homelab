@@ -68,9 +68,9 @@ flowchart LR
 
 ```
 .
-├── README.md                  ← you are here
+├── README.md                 
 ├── docs/
-│   ├── architecture.md        ← network, storage, resource budget
+│   ├── architecture.md        
 │   └── lessons-learned.md     ← things that broke and why
 ├── detection-lab/
 │   ├── README.md              ← lab design + ATT&CK coverage table
@@ -84,8 +84,8 @@ flowchart LR
 
 | Technique | Name | Detection | Status |
 |---|---|---|---|
-| [T1087.001](detection-lab/detections/T1087.001.md) | Local Account Discovery | SPL burst correlation | ✅ Validated |
-| T1053.003 | Cron | — | 🔜 Next |
+| [T1087.001](detection-lab/detections/T1087.001.md) | Local Account Discovery | SPL burst correlation | ✅ Done |
+| T1053.003 | Cron | — |  ✅ Done |
 | T1003.008 | /etc/passwd & /etc/shadow | — | Planned |
 | T1136.001 | Create Account | — | Planned |
 
@@ -97,7 +97,7 @@ Full table: [`detection-lab/README.md`](detection-lab/README.md#coverage)
 - [x] Wazuh SIEM with agents and SSH brute-force active response
 - [x] Splunk Enterprise + auditd telemetry + Atomic Red Team
 - [x] First custom detection (T1087.001)
-- [ ] Detections for T1053.003, T1003.008, T1136.001
+- [Curently] Detections for T1053.003, T1003.008, T1136.001
 - [ ] Convert detections to scheduled alerts, record ESCU comparison
 - [ ] Windows Server 2022 domain controller (AD telemetry)
 - [ ] Pi-hole + Tailscale MagicDNS
