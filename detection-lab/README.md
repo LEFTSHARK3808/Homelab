@@ -23,9 +23,6 @@ flowchart LR
     end
 ```
 
-**Why a VM?** The Linux audit subsystem isn't namespaced, so auditd can't run in an
-unprivileged container. A small VM gets its own kernel.
-
 **Snapshots:** `clean-baseline` (auditd + forwarder) and `art-ready` (+ PowerShell +
 ART). Every test ends in `-Cleanup` or a rollback to `art-ready`.
 
