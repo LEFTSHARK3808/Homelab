@@ -97,7 +97,7 @@ Full table: [`detection-lab/README.md`](detection-lab/README.md#coverage)
 - [x] Wazuh SIEM with agents and SSH brute-force active response
 - [x] Splunk Enterprise + auditd telemetry + Atomic Red Team
 - [x] First custom detection (T1087.001)
-- [Curently] Detections for T1053.003, T1003.008, T1136.001
+- [Currently] Detections for T1053.003, T1003.008, T1136.001
 - [ ] Windows Server 2022 domain controller (AD telemetry)
 - [ ] Pi-hole + Tailscale MagicDNS
 - [ ] Nginx Proxy Manager, Uptime Kuma, Portainer
