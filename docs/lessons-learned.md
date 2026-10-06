@@ -1,4 +1,4 @@
-# Lessons learned
+# Lessons learned(AKA things i needed to ask AI to help me fix) 
 
 Things that broke, why, and what fixed them. Most of the learning in this lab lives here.
 
