@@ -48,7 +48,7 @@ flowchart LR
     MAC -- WireGuard --> TS
     WIN -- WireGuard --> TS
     ATOMIC -- "auditd / auth / syslog<br/>:9997" --> SPLUNK
-    MAC -- "Obsidian LiveSync" --> DOCKER
+    TS -- "Obsidian LiveSync<br/>CouchDB :5984" --> DOCKER
 ```
 
 ## Inventory
